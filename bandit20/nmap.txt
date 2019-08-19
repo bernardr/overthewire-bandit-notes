@@ -1,0 +1,73 @@
+Starting Nmap 7.40 ( https://nmap.org ) at 2019-08-15 22:06 CEST
+NSE: Loaded 143 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 2) scan.
+Initiating NSE at 22:06
+Completed NSE at 22:06, 0.00s elapsed
+NSE: Starting runlevel 2 (of 2) scan.
+Initiating NSE at 22:06
+Completed NSE at 22:06, 0.00s elapsed
+Initiating Ping Scan at 22:06
+Scanning localhost (127.0.0.1) [2 ports]
+Completed Ping Scan at 22:06, 0.00s elapsed (1 total hosts)
+Initiating Connect Scan at 22:06
+Scanning localhost (127.0.0.1) [1000 ports]
+Discovered open port 113/tcp on 127.0.0.1
+Discovered open port 22/tcp on 127.0.0.1
+Discovered open port 30000/tcp on 127.0.0.1
+Completed Connect Scan at 22:06, 0.04s elapsed (1000 total ports)
+Initiating Service scan at 22:06
+Scanning 3 services on localhost (127.0.0.1)
+Completed Service scan at 22:08, 82.34s elapsed (3 services on 1 host)
+NSE: Script scanning 127.0.0.1.
+NSE: Starting runlevel 1 (of 2) scan.
+Initiating NSE at 22:08
+Completed NSE at 22:08, 5.03s elapsed
+NSE: Starting runlevel 2 (of 2) scan.
+Initiating NSE at 22:08
+Completed NSE at 22:08, 0.03s elapsed
+Nmap scan report for localhost (127.0.0.1)
+Host is up, received conn-refused (0.00030s latency).
+Scanned at 2019-08-15 22:06:46 CEST for 88s
+Not shown: 997 closed ports
+Reason: 997 conn-refused
+PORT      STATE SERVICE    REASON  VERSION
+22/tcp    open  tcpwrapped syn-ack
+| ssh-hostkey: 
+|   2048 0f:b3:a9:49:cc:50:3e:72:98:aa:10:fb:33:12:72:c4 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDrHED/X0pYziLKeWJ+q3Q4MZhjT5AnYU/DhWk6NcltT8RmCputTTxak7VRZCL8CNZTzokC7/iyAOVkKuDGutEEoaJEjxG866v8mKdnPEQpmPc0l0zq8wnlTjwoTxXQPIQTpTSdk7VCAhmLI9UScjjOUnuKTHzhDRTspvpaEegSaIlKu0PXntLF69B6Plv9nBA2i3h9NvK2R6/Qr+6FyDGbt+fL81HHuN9Vx7q+FC4c4wBYQdGJDN5XWryJMIYZ1Nmg8oEJDpn1RuGjfUxF3S3qPozxDrVA+m/g3cUQiTU2ZqFUtUWrFYvD/hbskbf5UcHQAMkWtD9inspv+Vzqc9jv
+|   256 0a:89:2a:f1:2e:2f:df:66:3e:fe:bb:49:10:1a:96:32 (ECDSA)
+|_ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBPQ3hiy42Gd1W442sy5QR+A2vhnp/xrrUn6c6X22Vl/W6437n1WuAVXHQW2gAi8Kj5q0+YmtPz/9YW5Uo4HYMmQ=
+113/tcp   open  ident      syn-ack
+30000/tcp open  ndmps?     syn-ack
+| fingerprint-strings: 
+|   FourOhFourRequest, GenericLines, GetRequest, HTTPOptions, Help, Kerberos, LDAPSearchReq, LPDString, RTSPRequest, SIPOptions, SSLSessionReq, TLSSessionReq: 
+|_    Wrong! Please enter the correct current password
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port30000-TCP:V=7.40%I=7%D=8/15%Time=5D55BB5C%P=x86_64-pc-linux-gnu%r(G
+SF:enericLines,31,"Wrong!\x20Please\x20enter\x20the\x20correct\x20current\
+SF:x20password\n")%r(GetRequest,31,"Wrong!\x20Please\x20enter\x20the\x20co
+SF:rrect\x20current\x20password\n")%r(HTTPOptions,31,"Wrong!\x20Please\x20
+SF:enter\x20the\x20correct\x20current\x20password\n")%r(RTSPRequest,31,"Wrq
+SF:ong!\x20Please\x20enter\x20the\x20correct\x20current\x20password\n")%r(
+SF:Help,31,"Wrong!\x20Please\x20enter\x20the\x20correct\x20current\x20pass
+SF:word\n")%r(SSLSessionReq,31,"Wrong!\x20Please\x20enter\x20the\x20correc
+SF:t\x20current\x20password\n")%r(TLSSessionReq,31,"Wrong!\x20Please\x20en
+SF:ter\x20the\x20correct\x20current\x20password\n")%r(Kerberos,31,"Wrong!\
+SF:x20Please\x20enter\x20the\x20correct\x20current\x20password\n")%r(FourO
+SF:hFourRequest,31,"Wrong!\x20Please\x20enter\x20the\x20correct\x20current
+SF:\x20password\n")%r(LPDString,31,"Wrong!\x20Please\x20enter\x20the\x20co
+SF:rrect\x20current\x20password\n")%r(LDAPSearchReq,31,"Wrong!\x20Please\x
+SF:20enter\x20the\x20correct\x20current\x20password\n")%r(SIPOptions,31,"W
+SF:rong!\x20Please\x20enter\x20the\x20correct\x20current\x20password\n");
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 2) scan.
+Initiating NSE at 22:08
+Completed NSE at 22:08, 0.00s elapsed
+NSE: Starting runlevel 2 (of 2) scan.
+Initiating NSE at 22:08
+Completed NSE at 22:08, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 88.01 seconds

@@ -1,0 +1,12 @@
+Logging in is easy and is covered here: 
+
+http://overthewire.org/wargames/bandit/bandit0.html
+
+but its also here: 
+
+- ssh into:  ssh bandit0@bandit.labs.overthewire.org, - p 2220
+	- password is: bandit0 
+
+
+* * * *
+

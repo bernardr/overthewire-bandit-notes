@@ -1,0 +1,3 @@
+Had trouble with a few different ones and would/should retry - ...
+
+[Bandit24-25](http://overthewire.org/wargames/bandit/bandit25.html)

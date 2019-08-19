@@ -1,0 +1,30 @@
+Flag to enter: gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr
+
+A program is running automatically at regular intervals from cron, the time-based job scheduler. Look in /etc/cron.d/ for the configuration and see what command is being executed.
+Commands you may need to solve this level
+
+cron, crontab, crontab(5) (use “man 5 crontab” to access this)
+
+
+* * * * 
+
+Weird one. 
+
+First navigated to /etc/cron.d/ 
+
+and found the `cronjob_bandit22` file. 
+
+Read the file w/ `cat` got the following: 
+
+@reboot bandit22 /usr/bin/cronjob_bandit22.sh &> /dev/null
+* * * * * bandit22 /usr/bin/cronjob_bandit22.sh &> /dev/null
+
+Tried rulling the shell file and got an error about not being able to create a directory ... this was probably due to the fact that the script isn't able to run  yet. 
+
+This point to a file here: /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+
+
+cat that file and you get ... 
+
+flag = Yk7owGAcWjwMVRwrTesJEwB7WVOiILLI
+
